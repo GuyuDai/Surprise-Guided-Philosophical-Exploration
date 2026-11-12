@@ -1,0 +1,26 @@
+{
+  "models": {
+    "master": "Qwen/Qwen2.5-32B-Instruct",
+    "amateur": "Qwen/Qwen2.5-1.5B-Instruct",
+    "dtype": "bfloat16",
+    "device_map": "auto"
+  },
+  "generation": {
+    "seeds": [2333, 1860, 666],
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "repetition_penalty": 1.05,
+    "high_temperature": 1.5,
+    "high_top_p": 0.95
+  },
+  "contrastive": {
+    "alpha": 1.0,
+    "amateur_top_k": 50,
+    "fast_zero_at_token": 50,
+    "slow_zero_at_token": 200
+  },
+  "prompts": "prompts/philosophy.jsonl",
+  "output_dir": "results"
+}
+
