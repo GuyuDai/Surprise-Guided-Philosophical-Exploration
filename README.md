@@ -311,8 +311,6 @@ Evaluate whether contrastive decoding generates **semantically** distinct respon
 
 #### Seed 1860
 
-生成 token：583；耗时：26.91 秒；参数：alpha=1.0, amateur_top_k=50, zero_at_token=200, temperature=0.7, top_p=0.8, top_k=20, repetition_penalty=1.05
-
 > 针对案例当中国人物的行为理解，“骑車的知识状态及其表態或執�行表現能否代表知識拥有态勢”, 实是一个认知能力和实践活动区異讨论的一部分：“明述型知晓(pro-positial知识/k)即明确的语言化的理解和“程序记忆或隐技能性知識(tutitive K/Skil-based)"类型行为控制模式差异及其互推可能性探讨:
 >
 > 就三位案主人公现状來评估看——按你询问意图解析來推测应是从广宽"广“的知识论概念框架讨论分析他们的「懂騎行车与否状况分析结论应该為如———-—
@@ -333,8 +331,6 @@ Evaluate whether contrastive decoding generates **semantically** distinct respon
 > 最强的反对意见可能是认为理论知识同样重要，甚至能够指导实践。然而，理论知识转化为实践技能往往需要大量的练习和实际体验，特别是在涉及复杂协调和快速反应的任务时。因此，尽管理论知识对于理解和改进技能至关重要，但单独依靠理论知识并不能保证实际操作的成功。
 
 #### Seed 666
-
-生成 token：540；耗时：25.112 秒；参数：alpha=1.0, amateur_top_k=50, zero_at_token=200, temperature=0.7, top_p=0.8, top_k=20, repetition_penalty=1.05
 
 > 针对提出的这种情况时涉及到哲学认识中实践智能(k-now-h ow知识, 卟�“该如 什么是"（declarativo r know-that kn owl edge ), 幊及它们两者 的交繒 关糽
 >
