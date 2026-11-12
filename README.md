@@ -12,7 +12,7 @@
 
 - Completed the contrastive decoding experiments; see `results/phase1.md` for details. 完成了contrastive decoding实验，详见`results/phase1.md`
 > [!CAUTION]
-> contrastive decoding 会带来乱码和胡言乱语，但是恢复 Master 后，讨论的却还是同一件事。2.1 的未来方案应该是必要的。
+> contrastive decoding 会带来乱码和胡言乱语，但是恢复 Master 后，讨论的却还是同一件事。**2.1 的未来方案应该是必要的**。
 
 ## 1. Motivation
 
