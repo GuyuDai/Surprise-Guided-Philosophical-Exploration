@@ -38,9 +38,12 @@
 
 At each newly expanded node, we apply **Contrastive Decoding** to encourage exploration beyond the Master's conventional predictions. The contrast strength $\alpha$ is gradually annealed to zero over the first $K$ generated tokens, after which the Master continues with ordinary autoregressive decoding. 在每个新拓展的节点上，使用 **Contrastive Decoding** 鼓励模型探索常规预测之外的思路。在前 $K$ 个 token 中，将对比强度 $\alpha$ 逐渐退火至零，随后由 Master 使用正常的自回归解码继续推演。
 
-$$
-q_t(x\mid h_t)=\operatorname{softmax}\left(\frac{\ell_M(x\mid h_t)-\alpha_t\ell_A(x\mid h_t)}{T}\right)
-$$
+```math
+q_t(x \mid h_t) =
+\mathrm{softmax}\left(
+\frac{\ell_M(x \mid h_t) - \alpha_t \ell_A(x \mid h_t)}{T}
+\right)
+```
 
 where $\ell_M$ and $\ell_A$ are the logits of the Master and Amateur models, respectively, and $\alpha_t$ decreases from $\alpha_0$ to $0$ over $K$ tokens. Annealing prevents sustained contrastive decoding from accumulating distribution shifts and degrading language coherence, while allowing the Master to develop the explored idea into a complete argument. 其中 $\ell_M$ 和 $\ell_A$ 分别表示 Master 和 Amateur 的 logits，$\alpha_t$ 在 $K$ 个 token 内从 $\alpha_0$ 逐渐下降至 $0$。退火机制旨在避免持续对比解码造成分布偏移累积、损害文本连贯性，同时允许 Master 将探索出的新思路发展为完整论证。
 
@@ -48,10 +51,12 @@ where $\ell_M$ and $\ell_A$ are the logits of the Master and Amateur models, res
 
 current definition of surprise score:
 
-$$
-surprise=\underbrace{D_{\mathrm{KL}}(p_M\Vert p_A)}_{\text{model disagreement}}
-\times\underbrace{\frac{1}{\operatorname{PPL}_M(y)}}_{\text{Master likelihood proxy}}.
-$$
+```math
+\mathrm{surprise} =
+\underbrace{D_{\mathrm{KL}}(p_M \Vert p_A)}_{\text{Model disagreement}}
+\times
+\underbrace{\frac{1}{\mathrm{PPL}_M(y)}}_{\text{Master likelihood proxy}}
+```
 
 **However** , whether we can define a computational metric to evaluate the quality of philosophical texts is doubtful.
 
