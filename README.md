@@ -11,7 +11,8 @@
 **Current status**
 
 - Completed the contrastive decoding experiments; see `results/phase1.md` for details. 完成了contrastive decoding实验，详见`results/phase1.md`
-- $\color{red}{失败了！\text{contrastive decoding} 会带来乱码和胡言乱语，但是恢复 \text{Master} 后，讨论的却还是同一件事。怀疑哲学文本有一个内部表征，\text{contrastive decoding} 并没有改变它，反而还破坏了表达能力。}$
+> [!CAUTION]
+> **失败了！** contrastive decoding 会带来乱码和胡言乱语，但是恢复 Master 后，讨论的却还是同一件事。怀疑哲学文本有一个内部表征，contrastive decoding 并没有改变它，反而还破坏了表达能力。
 
 ## 1. Motivation
 
